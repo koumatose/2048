@@ -5,7 +5,7 @@ function HTMLActuator() {
   this.messageContainer = document.querySelector(".game-message");
   this.sharingContainer = document.querySelector(".score-sharing");
 
-  this.score = 0;
+  this.score = 1234567;
 }
 
 HTMLActuator.prototype.actuate = function (grid, metadata) {
@@ -52,18 +52,18 @@ HTMLActuator.prototype.clearContainer = function (container) {
 
 HTMLActuator.prototype.addTile = function (tile) {
   var valueMap = {
-    2 :    '<Udacity>',
-    4 :    '<Intro CS>',
-    8 :    "skills=['code']",
-    16 :   "skills.add('CSS')",
-    32 :   '</Intro CS>',
-    64 :   '<Job search>',
-    128 :  'getJob(skills)',
-    256 :  '</Job search>',
-    512 :  'if Udacious:',
-    1024 : 'skills.increase()',
-    2048 : 'myJob.advance()',
-    4096 : 'myCareer=myJob'
+    2 :    '0.0009765625',
+    4 :    '0.001953125',
+    8 :    "0.00390625",
+    16 :   "0.0078125",
+    32 :   '0.015625',
+    64 :   '0.03125',
+    128 :  '0.0625',
+    256 :  '0.125',
+    512 :  '0.25',
+    1024 : '0.5',
+    2048 : '1',
+    4096 : '2'
   }
   var self = this;
 
